@@ -13,6 +13,9 @@ public class Main {
     currentThread.setName("MainGuy");
     currentThread.setPriority(Thread.MAX_PRIORITY);
     printThreadState(currentThread);
+
+    CustomThread customThread = new CustomThread();
+    customThread.start();
   }
 
   public static void printThreadState(Thread thread) {
